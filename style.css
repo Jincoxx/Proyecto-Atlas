@@ -16,9 +16,21 @@ main {
   color: white;
 }
 
-.logo {
+.header-1 img {
   max-width: 7rem;
   padding: 0.5rem;
+}
+
+.header-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 8rem 1rem;
+  color: aliceblue;
+  align-items: center;
+}
+
+.header-1 h2 {
+  font-size: 5rem;
 }
 
 .banner {
@@ -74,7 +86,7 @@ main {
 }
 
 .cards-container {
-  border: 1px solid #ddd; /*para ver el borde donde estoy trabajando*/
+  border: 0px solid #ddd; /*para ver el borde donde estoy trabajando*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -82,7 +94,7 @@ main {
 }
 
 .card {
-  border: 1px solid #ddd; /*para ver el borde donde estoy trabajando*/
+  border: 0px solid #ddd; /*para ver el borde donde estoy trabajando*/
   max-width: 20rem;
   padding: 2rem;
   text-align: center;
@@ -101,7 +113,7 @@ main {
 }
 
 .section-content-2 {
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -112,7 +124,7 @@ main {
 }
 
 .item-container {
-  border: 1px solid #ddd; /*para ver el borde donde estoy trabajando*/
+  border: 0px solid #ddd; /*para ver el borde donde estoy trabajando*/
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -142,7 +154,7 @@ main {
 }
 
 .container-img {
-  border: 1px solid #ddd; /*para ver el borde donde estoy trabajando*/
+  border: 0px solid #ddd; /*para ver el borde donde estoy trabajando*/
   display: flex;
   height: auto;
   flex-direction: column;
@@ -151,7 +163,7 @@ main {
 }
 
 .section-content-3 {
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -176,7 +188,7 @@ main {
 }
 
 .pricing-container {
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -292,7 +304,7 @@ main {
   justify-content: space-around;
   color: white;
   background-color: rgb(9, 14, 66);
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .contact {
@@ -301,8 +313,107 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 8rem 8rem;
 }
 
+.footer1 h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.lorem {
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem;
+  gap: 5rem;
+}
+
+.Lorem p {
+  font-size: 1rem;
+  color: white;
+}
+
+.Lorem2 p {
+  font-size: 1rem;
+  color: white;
+}
+
+.footer h2 {
+  padding: 0rem 0rem 1rem;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 8rem 8rem;
+  background-image: url(images/contact-bk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.Data1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 0rem 0rem;
+}
+
+.name {
+  padding: 0rem 1rem 1rem;
+  color: #00ffad;
+}
+
+.footer input {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background: transparent;
+  border-color: #00ffad;
+}
+
+.Email {
+  padding: 0rem 1rem 1rem;
+  color: #00ffad;
+}
+
+.Message {
+  padding: 0rem 1rem 1rem;
+  width: 100%;
+  color: #00ffad;
+}
+
+.Message textarea {
+  background: transparent;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  width: 100%;
+  border-color: #00ffad;
+}
+
+.ultimatefooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem 2rem;
+  background-color: #192440;
+  color: #fff;
+}
+
+.ultimatefooter a {
+  background-color: #fff;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+
+.Message button {
+  width: 100%;
+  background-color: #00ffad;
+  border-radius: 2rem;
+  color: black;
+  padding: 0.5rem;
+}
 /*
 .contact form {
   display: flex;
@@ -328,11 +439,7 @@ main {
   border-radius: 5px;
 }
 
-.social a {
-  color: white;
-  margin: 0 10px;
-  text-shadow: 1px 4px 4px black;
-}
+
 
 input {
   width: 100%; 
@@ -365,54 +472,11 @@ input {
 
 */
 
-.contact-form-container {
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.contact-form {
-  border: 1px solid #ddd; /*para ver el borde donde estoy trabajando*/
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 5rem;
-  text-align: left;
-
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.input-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-group label {
-  color: #00ffcc;
-  margin-bottom: 5px;
-}
-
-.input-group input,
-.input-group textarea {
-  padding: 10px;
-  border: 2px solid #00ffcc;
-  border-radius: 5px;
-  background-color: transparent;
-  color: #fff;
-  outline: none;
-}
-
-.input-group input:focus,
-.input-group textarea:focus {
-  border-color: #00ffaa;
-}
-
 .submit-button {
   padding: 15px;
   border: none;
   border-radius: 25px;
-  background-color: #00ffcc;
+  background-color: #eeeeee;
   color: #000;
   font-size: 16px;
   cursor: pointer;
@@ -421,4 +485,10 @@ input {
 
 .submit-button:hover {
   background-color: #00ffaa;
+}
+
+.social a {
+  color: white;
+  margin: 0 10px;
+  text-shadow: 1px 4px 4px black;
 }
