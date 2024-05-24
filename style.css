@@ -4,19 +4,47 @@
   font-family: Arial, sans-serif;
 }
 
+main {
+  flex-grow: 1; /* Hace que el contenido del main ocupe todo el espacio restante */
+}
+
 .header {
   background-image: url(images/banner-bk.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 30rem;
   color: white;
+}
+
+.logo {
+  max-width: 7rem;
+  padding: 0.5rem;
+}
+
+.banner {
+  border: 0px solid #ddd; /*para ver el borde donde estoy trabajando*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  padding: 5rem;
+  text-align: left;
+}
+
+.banner h2 {
+  font-size: 5rem;
+}
+
+.banner p {
+  font-size: 1rem;
+  color: white;
+  margin: 10px;
 }
 
 .banner a {
   display: inline-block;
   margin-top: 3rem;
-  padding: 1rem 1rem;
+  padding: 1rem;
   background-color: aquamarine;
   color: black;
   text-decoration: none;
@@ -106,7 +134,7 @@
   display: inline-block;
   margin-top: 3rem;
   padding: 1rem 1rem;
-  background-color: darkblue;
+  background-color: rgb(9, 14, 66);
   color: white;
   text-decoration: none;
   border-radius: 1.5rem;
@@ -201,7 +229,7 @@
 
 .pricing-card-1 {
   color: white;
-  background-color: #0c2866;
+  background-color: rgb(9, 14, 66);
   padding: 5rem;
   max-width: 300px;
   text-align: center;
@@ -231,11 +259,11 @@
   color: white;
 }
 
-.pricing-card-button {
+.pricing-card-button_1 {
   display: center;
   width: 60%;
   padding: 1rem;
-  background-color: white;
+  background-color: aquamarine;
   color: black;
   text-align: center;
   border: solid 1px;
@@ -247,40 +275,79 @@
 
 .section-content-4 {
   display: flex;
-  justify-content: space-between;
-  background-color: rgb(223, 210, 210);
-  padding: 5rem;
-  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  background-color: gainsboro;
+  padding: 1.5rem;
+}
+
+.section-content-4 img {
+  width: 8rem;
+  height: auto;
 }
 
 .container-footer {
+  display: flex;
+  justify-content: space-around;
   color: white;
-  padding: 50px;
   background-color: rgb(9, 14, 66);
   padding: 20px 0;
-  width: 200%;
+}
+
+.contact {
+  background-image: url(images/contact-bk.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/*
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto 20px auto;
+}
+
+.contact input,
+.contact textarea {
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px color(aquamarine);
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 10px;
+  background: #00e676;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 
 .social a {
-  color: #ffffff; /* Blanco */
+  color: white;
   margin: 0 10px;
   text-shadow: 1px 4px 4px black;
 }
 
 input {
-  width: 100%; /* Modificación para ocupar todo el ancho disponible */
+  width: 100%; 
   padding: 10px;
   border: 2px solid #00ffcc;
   border-radius: 5px;
   background-color: transparent;
   color: #fff;
   outline: none;
-  box-sizing: border-box; /* Incluir el relleno y el borde en el ancho total */
+  box-sizing: border-box; 
   width: calc(100% - 40px);
 }
 
 .submit-button {
-  width: 100%; /* Modificación para ocupar todo el ancho disponible */
+  width: 100%; /
   padding: 15px;
   border: none;
   border-radius: 25px;
@@ -289,7 +356,67 @@ input {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
-  box-sizing: border-box; /* Incluir el relleno y el borde en el ancho total */
+  box-sizing: border-box; 
+}
+
+.submit-button:hover {
+  background-color: #00ffaa;
+}
+
+*/
+
+.contact-form-container {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-form {
+  border: 1px solid #ddd; /*para ver el borde donde estoy trabajando*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 5rem;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  color: #00ffcc;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 10px;
+  border: 2px solid #00ffcc;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #00ffaa;
+}
+
+.submit-button {
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: #00ffcc;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .submit-button:hover {
